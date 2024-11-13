@@ -81,6 +81,9 @@ def main():
         
         result = evaluate_expression(expression, used_symbols, values)
         results.append(result)
+
+    # Output the results to the console
+    print("Results:", results)
     
     # Plot the results
     plt.plot(range(1, num_cycles + 1), results, marker='o')
